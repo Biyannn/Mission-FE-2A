@@ -2,7 +2,7 @@ const TutorTesti = ({ titleTutor, background }) => {
   return (
     <div className="p-6 gap-6 border-2 rounded-lg border-[#3A35411F] bg-white">
       <h2 className="text-xl font-semibold pb-2">{titleTutor}</h2>
-      <div className="justify-between flex space-x-4">
+      <div className="justify-between flex md:space-x-4 max-md:flex-col max-md:space-y-2">
         {background &&
           background.map((tutor) => (
             <div

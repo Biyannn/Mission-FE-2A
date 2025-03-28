@@ -32,7 +32,7 @@ const ProfileNoApi = () => {
 
   return (
     <>
-      <div className="py-16 px-28 justify-between md:flex  space-x-2 grid grid-cols-auto-fill">
+      <div className="py-16 px-28 justify-between md:flex grid grid-cols-auto-fill max-md:space-y-2">
         {/* Left Section start */}
         <div className="flex flex-col my-2">
           <div className="justify-start items-start flex flex-col ">
@@ -57,7 +57,7 @@ const ProfileNoApi = () => {
         {/* Left Section end */}
 
         {/* Right Section Start  */}
-        <div className="bg-white p-6 border-2 border-[#3A35411F] rounded-lg">
+        <div className="bg-white p-6 border-2 border-[#3A35411F] rounded-lg max-md:space-x-2">
           <div className="flex">
             <img
               src="./Avatar/profile layout.png"
@@ -68,7 +68,7 @@ const ProfileNoApi = () => {
               <p className="text-xl font-semibold text-[#222325]">
                 {user.name}
               </p>
-              <p className="text-base font-normal text-[#222325]">
+              <p className="text-base font-normal text-[#222325] max-md:pr-2">
                 {user.email}
               </p>
               <a href="#" className="text-[#F64920] text-base font-semibold">
@@ -83,7 +83,7 @@ const ProfileNoApi = () => {
             className="w-11/12 justify-center items-center text-center my-10 bg-[#3A35411F] border-2 border-[#3A35411F] flex"
           />
           {/* Form Input Start */}
-          <div className="flex space-x-10 justify-center">
+          <div className="flex md:space-x-6 max-md:space-y-2 justify-center max-md:flex-col">
             <label className="flex flex-col text-sm font-normal  hover:text-[#3ECF4C]">
               Nama Lengkap
               <input
@@ -105,13 +105,13 @@ const ProfileNoApi = () => {
                 className="text-base font-normal text-[#222325] py-3 px-3 border-2 rounded-xl hover:border-[#3ECF4C]"
               />
             </label>
-
+            <div className="md:flex max-md:flex space-x-2">
             <select
               name=""
               id=""
-              className="text-base font-normal text-[#222325] border-2 rounded-xl hover:border-[#3ECF4C]"
+              className="text-base font-normal text-[#222325] border-2 rounded-xl hover:border-[#3ECF4C] h-12 self-end w-20 px-3 flex max-md:flex-col bg-white"
             >
-              <option value="" className="py-3 pl-1">
+              <option value="" className="">
                 +62
               </option>
             </select>
@@ -119,9 +119,10 @@ const ProfileNoApi = () => {
               No Hp
               <input
                 type="text"
-                className="text-base font-normal text-[#222325] py-3 px-3 border-2 rounded-xl hover:border-[#3ECF4C]"
+                className="text-base font-normal text-[#222325] px-3 py-3 border-2 rounded-xl hover:border-[#3ECF4C]"
               />
             </label>
+            </div>
           </div>
           <div className="justify-end text-end">
             <button

@@ -1,7 +1,7 @@
 const CardBuy = () => {
     return (
       <>
-        <div className="p-6 gap-6 border-2 rounded-lg border-[#3A35411F] bg-white justify-center items-center text-center flex flex-col">
+        <div className="p-6 gap-6 border-2 rounded-lg border-[#3A35411F] bg-white flex flex-col h-fit">
           <h2 className="text-lg font-semibold text-[#222325]">
             Gapai Karier Impianmu sebagai Seorang UI/UX Designer & Product
             Manager.
@@ -25,36 +25,39 @@ const CardBuy = () => {
           <p className="text-sm font-semibold text-[#222325]">
             Kelas Ini Sudah Termasuk
           </p>
-  
-          <div className="justify-between flex flex-col space-y-2">
-            <p className="text-sm font-normal text-[#333333AD] flex">
+
+          
+          <div className="justify-between grid grid-cols-2 gap-4">
+            <p className="text-sm font-normal text-[#333333AD] flex gap-2">
               <img src="/icons/File_Check.png" alt="" className="w-6 h-6" />
               Ujian Akhir
             </p>
-            <p className="text-sm font-normal text-[#333333AD] flex">
+            <p className="text-sm font-normal text-[#333333AD] flex gap-2">
               <img src="/icons/book2.png" alt="" className="w-6 h-6" />7 Dokumen
             </p>
-            <p className="text-sm font-normal text-[#333333AD] flex">
+            <p className="text-sm font-normal text-[#333333AD] flex gap-2">
               <img src="/icons/File_Edit.png" alt="" className="w-6 h-6" />
               Pretest
             </p>
-            <p className="text-sm font-normal text-[#333333AD] flex">
+            <p className="text-sm font-normal text-[#333333AD] flex gap-2">
               <img src="/icons/recorder.png" alt="" className="w-6 h-6" />
               49 Video
             </p>
-            <p className="text-sm font-normal text-[#333333AD] flex">
+            <p className="text-sm font-normal text-[#333333AD] flex gap-2">
               <img src="/icons/achievement.png" alt="" className="w-6 h-6" />
               Sertifikat
             </p>
           </div>
-  
+
+          <div className="space-y-4">
           <h2 className="text-sm font-semibold text-[#222325]">
             Bahasa Pengantar
           </h2>
-          <p className="text-sm font-normal text-[#333333AD] flex">
+          <p className="text-sm font-normal text-[#333333AD] flex gap-2">
             <img src="/icons/www.png" alt="" className="w-6 h-6" />
-            Sertifikat
+            Bahasa Indonesia
           </p>
+          </div>
         </div>
       </>
     );

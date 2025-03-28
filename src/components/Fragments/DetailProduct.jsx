@@ -46,8 +46,8 @@ const DetailProduct = () => {
           count={product && product.count}
           rate={product && product.rate}
         ></BannerTop>
-        <div className="flex justify-between space-x-2">
-          <div className="flex flex-col space-y-4 w-[150%]">
+        <div className="flex max-md:flex-col-reverse justify-between md:space-x-2 gap-6">
+          <div className="flex flex-col space-y-4 md:w-[150%] max-md:flex-none">
             <DescriptionBox
               description={product && product.description}
             ></DescriptionBox>
@@ -55,19 +55,19 @@ const DetailProduct = () => {
               titleTutor={product && product.titletutor}
               background={product && product.background}
             ></TutorTesti>
+            <Introduction
+              course={product && product.course}
+              materi={product && product.materi}
+            ></Introduction>
+            <Review
+              titlereview={product && product.titlereview}
+              background={product && product.background}
+              count={product && product.count}
+              rate={product && product.rate}
+            ></Review>
           </div>
-          <CardBuy></CardBuy>
+          <CardBuy />
         </div>
-        <Introduction
-          course={product && product.course}
-          materi={product && product.materi}
-        ></Introduction>
-        <Review
-          titlereview={product && product.titlereview}
-          background={product && product.background}
-          count={product && product.count}
-          rate={product && product.rate}
-        ></Review>
 
         {/* Title Above Card Product Start */}
         <h1 className="font-semibold text-3xl text-[#222325] pt-4 pb-1">
